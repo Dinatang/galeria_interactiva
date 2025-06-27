@@ -1,0 +1,45 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #31c2db;
+  padding: 20px;
+  text-align: center;
+}
+
+.input-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+input[type="url"] {
+  padding: 10px;
+  width: 300px;
+}
+
+button {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+}
+
+.gallery img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border: 3px solid transparent;
+  transition: all 0.3s ease;
+}
+
+.gallery img.selected {
+  border: 3px solid #00f;
+  box-shadow: 0 0 10px #00f;
+  transform: scale(1.05);
+}
